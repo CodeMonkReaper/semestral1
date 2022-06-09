@@ -32,7 +32,7 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="productos.html">Productos</a>
+                <a class="nav-link" href="{%url 'productos'%}">Productos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="quienes_somos.html">Quienes somos</a>
@@ -65,6 +65,9 @@
       </nav>
       {% block cindex %}
       {% endblock cindex  %}
+
+      {% block cproducto %}
+      {% endblock cproducto  %}
     <footer class="footer">
       <div class="row justify-content-around text-light">
         <div class="col-md-4 my-auto">
@@ -118,3 +121,4 @@
 <!-- Aquí puedes escribir tu comentario --> 
 <!-- Aquí puedes escribir tu comentario --> 
 {% comment %} sssssssassasasasassa {% endcomment %}
+
