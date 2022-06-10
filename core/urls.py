@@ -4,8 +4,8 @@ urlpatterns = [
 
     path('', home, name="home"),
     path('productos/', productos, name="productos"),
-    path('quienes-somos/', quienes_somos, name='quienes_somos'),
-    path("macetas/", macetas, name="macetas"), 
-    path('guantes',guantes,name="guantes")
+    path('quienes-somos/', quienes_somos, name="quienes_somos"),
+    path('macetas/', macetas, name="macetas"), 
+    path('guantes/',guantes,name="guantes")
     ]
 
