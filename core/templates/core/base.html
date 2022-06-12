@@ -29,10 +29,10 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="productos.html">Productos</a>
+                <a class="nav-link" href="{%url 'productos'%}">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="quienes_somos.html">Quienes somos</a>
+                <a class="nav-link" href="{%url 'quienes_somos'%}">Quienes somos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="ofertas.html">OFERTAS DEL MES</a>
@@ -62,10 +62,14 @@
       </nav>
       {% block cindex %}
       {% endblock cindex  %}
+      {% block producto %}
+      {% endblock producto  %}
       {% block 1 %}
       {% endblock 1 %}
       {% block guantes %}
       {% endblock guantes %}
+      {% block quienes_somos %}
+      {% endblock quienes_somos %}
     <footer class="footer">
       <div class="row justify-content-around text-light">
         <div class="col-md-4 my-auto">
@@ -123,3 +127,4 @@
 <!-- Aquí puedes escribir tu comentario --> 
 <!-- Aquí puedes escribir tu comentario --> 
 {% comment %} sssssssassasasasassa {% endcomment %}
+
