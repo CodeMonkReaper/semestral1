@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: 	#008000;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{% url 'home' %}">
                 <img src="{% static 'core/img/logo.png' %}" alt="Maceteao" width="80" height="80" class="d-inline-block" >
               </a>
               <span class="navbar-brand">
@@ -26,7 +26,7 @@
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100x; margin-left: 20px; ">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{%url 'productos'%}">Productos</a>
@@ -38,7 +38,7 @@
                 <a class="nav-link" href="ofertas.html">OFERTAS DEL MES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="api.html">VALORES</a>
+                <a class="nav-link" href="{% url 'api' %}">VALORES</a>
               </li>
               <li class="nav-item">
             </li>
