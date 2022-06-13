@@ -33,3 +33,6 @@ def portamangueras(request):
 
 def mangueras(request):
     return render(request,'core/mangueras.html')
+
+def palas(request):
+    return render(request,'core/palas.html')
