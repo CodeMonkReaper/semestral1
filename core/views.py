@@ -28,3 +28,5 @@ def tijeras(request):
 def semillas(request):
     return render(request,'core/semillas.html')
 
+def portamangueras(request):
+    return render(request,'core/portamangueras.html')
