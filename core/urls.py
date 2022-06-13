@@ -1,4 +1,4 @@
-from .views import home, productos, macetas, guantes, semillas, tierras, tijeras, quienes_somos, portamangueras
+from .views import home, productos, macetas, guantes, semillas, tierras, tijeras, quienes_somos, portamangueras, mangueras
 from django.urls import path
 urlpatterns = [
     path('', home, name="home"),
@@ -10,6 +10,7 @@ urlpatterns = [
     path('semillas/',semillas,name="semillas"),
     path('tijeras/',tijeras,name="tijeras"),
     path('portamangueras/',portamangueras,name="portamangueras"),
+    path('mangueras/',mangueras,name="mangueras"),
 
     ]
 

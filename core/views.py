@@ -30,3 +30,6 @@ def semillas(request):
 
 def portamangueras(request):
     return render(request,'core/portamangueras.html')
+
+def mangueras(request):
+    return render(request,'core/mangueras.html')
