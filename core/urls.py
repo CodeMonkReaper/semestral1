@@ -1,4 +1,4 @@
-from .views import home, productos, macetas, guantes, semillas, tierras, tijeras, quienes_somos, portamangueras, mangueras, palas
+from .views import home, productos, macetas, guantes, semillas, tierras, tijeras, quienes_somos, portamangueras, mangueras, palas, register, login,ofertas
 from django.urls import path
 urlpatterns = [
     path('', home, name="home"),
@@ -12,6 +12,8 @@ urlpatterns = [
     path('portamangueras/',portamangueras,name="portamangueras"),
     path('mangueras/',mangueras,name="mangueras"),
     path('palas/',palas,name="palas"),
-
+    path('register/',register,name="register"),
+    path('login/',login,name="login"),
+    path('ofertas/',ofertas,name="ofertas"),
     ]
 

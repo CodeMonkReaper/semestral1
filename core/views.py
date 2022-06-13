@@ -36,3 +36,12 @@ def mangueras(request):
 
 def palas(request):
     return render(request,'core/palas.html')
+
+def register(request):
+    return render(request,'core/register.html')
+
+def login(request):
+    return render(request,'core/login.html')
+
+def ofertas(request):
+    return render(request,'core/ofertas.html')
