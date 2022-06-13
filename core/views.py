@@ -10,19 +10,6 @@ def productos(request):
 def quienes_somos(request):
     return render(request, 'core/quienes_somos.html')
 
-<<<<<<< HEAD
-def register(request):
-    return render(request, 'core/register.html'),
-
-def semillas(request):
-    return render(request, 'core/semillas.html'),
-
-def tierras(request):
-    return render(request, 'core/tierras.html'),
-
-def tijeras(request):
-    return render(request, 'core/tijeras.html')
-=======
 def macetas(request):
     return render(request, 'core/macetas.html')
 
@@ -31,4 +18,13 @@ def api(request):
     
 def guantes(request):
     return render(request,'core/guantes.html')
->>>>>>> pedro
+
+def tierras(request):
+    return render(request,'core/tierras.html')
+
+def tijeras(request):
+    return render(request,'core/tijeras.html')
+
+def semillas(request):
+    return render(request,'core/semillas.html')
+
