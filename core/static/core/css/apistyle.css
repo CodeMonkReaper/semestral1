@@ -1,3 +1,18 @@
+body {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("static/core/css/img/1291273.jpeg");
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.form {
+    font-family: 'Secular One', sans-serif;
+    font-size: small;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background: rgba(5, 7, 12, 0.40)
+}
 #api1 {
     margin-left: auto;
     margin-right: auto;
