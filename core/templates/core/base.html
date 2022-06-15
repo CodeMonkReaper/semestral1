@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: 	#008000;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -35,7 +36,7 @@
                 <a class="nav-link" href="{%url 'quienes_somos'%}">Quienes somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="ofertas.html">OFERTAS DEL MES</a>
+                <a class="nav-link" href="{%url 'ofertas'%}">OFERTAS DEL MES</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="api.html">VALORES</a>
@@ -44,12 +45,13 @@
             </li>
             </ul>
             <form class="d-flex">
-              <a href="login.html">
+              <a href="{%url 'login'%}">
               <button type="button" class="btn btn-success">Login</button>
               </a>
               <form class="d-flex">
-                <a href="register.html">
-                <button type="button" class="btn btn-danger">Registrar</button>
+                
+                <a href="{%url 'register'%}">
+                  <button type="button" class="btn btn-danger">Registrar</button>
                 </a>
               <a href="comprar.html" class="nav-link">
                 <img src="{% static 'core/img/carrito.png' %}" alt="carrito">
@@ -62,14 +64,43 @@
       </nav>
       {% block cindex %}
       {% endblock cindex  %}
+
       {% block producto %}
       {% endblock producto  %}
+
       {% block 1 %}
       {% endblock 1 %}
+
       {% block guantes %}
       {% endblock guantes %}
+
       {% block quienes_somos %}
       {% endblock quienes_somos %}
+
+      {%block semillas%}
+      {%endblock semillas%}
+
+      {%block tierras%}
+      {%endblock tierras%}
+
+      {%block tijeras%}
+      {%endblock tijeras%}
+
+      {%block portamangueras%}
+      {%endblock portamangueras%}
+
+      {%block mangueras%}
+      {%endblock mangueras%}
+
+      {%block palas%}
+      {%endblock palas%}
+
+      {%block macetas%}
+      {%endblock macetas%}
+
+      {%block ofertas%}
+      {%endblock ofertas%}
+      
     <footer class="footer">
       <div class="row justify-content-around text-light">
         <div class="col-md-4 my-auto">

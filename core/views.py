@@ -18,3 +18,30 @@ def api(request):
     
 def guantes(request):
     return render(request,'core/guantes.html')
+
+def tierras(request):
+    return render(request,'core/tierras.html')
+
+def tijeras(request):
+    return render(request,'core/tijeras.html')
+
+def semillas(request):
+    return render(request,'core/semillas.html')
+
+def portamangueras(request):
+    return render(request,'core/portamangueras.html')
+
+def mangueras(request):
+    return render(request,'core/mangueras.html')
+
+def palas(request):
+    return render(request,'core/palas.html')
+
+def register(request):
+    return render(request,'core/register.html')
+
+def login(request):
+    return render(request,'core/login.html')
+
+def ofertas(request):
+    return render(request,'core/ofertas.html')
