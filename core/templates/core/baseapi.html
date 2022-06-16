@@ -1,15 +1,13 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
-
+  {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maceteao - Artículos para jardín</title>
     <link rel="icon" type="image/x-icon" href="{% static 'core/img/flor.png'%}" >
-
-    {% load static %}
     <link rel="icon" type="image/x-icon" href="{% static 'core/img/flor.png'%}" >
     
 </head>
@@ -17,7 +15,7 @@
 <body>
 <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: 	#008000;">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="{% url 'home' %}">
             <img src="{% static 'core/img/logo.png' %}" alt="Maceteao" width="80" height="80" class="d-inline-block" >
           </a>
           <span class="navbar-brand">
@@ -30,25 +28,25 @@
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100x; margin-left: 20px; ">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="productos.html">Productos</a>
+            <a class="nav-link" href="{% url 'productos' %}">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="quienes_somos.html">Quienes somos</a>
+            <a class="nav-link" href="{% url 'quienes_somos' %}">Quienes somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ofertas.html">OFERTAS DEL MES</a>
+            <a class="nav-link" href="{% url 'ofertas' %}">OFERTAS DEL MES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="api.html">VALORES</a>
+            <a class="nav-link" href="{% url 'api' %}">VALORES</a>
           </li>
           <li class="nav-item">
         </li>
         </ul>
         <form class="d-flex">
-          <a href="login.html">
+          <a href="{% url 'login' %}">
           <button type="button" class="btn btn-success">Login</button>
           </a>
           <form class="d-flex">
