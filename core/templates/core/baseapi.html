@@ -37,9 +37,6 @@
             <a class="nav-link" href="{% url 'quienes_somos' %}">Quienes somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'ofertas' %}">OFERTAS DEL MES</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="{% url 'api' %}">VALORES</a>
           </li>
           <li class="nav-item">
@@ -64,6 +61,8 @@
   </nav>
 </body>
 </html>
+{% block agregar %}
+{% endblock agregar %}
   {% block 1 %}
   {% endblock 1 %}
   {% block cssa %}
