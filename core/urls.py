@@ -11,4 +11,3 @@ urlpatterns = [
     path('creditodebito/',creditodebito, name="creditodebito"),
     path('agregarprod/',agregar_prod, name="agregarprod"),
     ]
-
