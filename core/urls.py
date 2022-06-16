@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 from unicodedata import name
 from django.urls import path
 from .views import home, productos, macetas, quienes_somos, guantes,api
@@ -18,6 +19,9 @@ urlpatterns = [
 =======
 from .views import api, comprar, creditodebito, home, productos, quienes_somos,register, login
 api
+=======
+from .views import home, quienes_somos, api, register, login, productos, comprar, creditodebito, agregar_prod
+>>>>>>> Luis
 from django.urls import path
 urlpatterns = [
     path('', home, name="home"),
@@ -33,6 +37,10 @@ urlpatterns = [
     path('api/',api, name="api"),
     path('comprar/',comprar, name="comprar"),
     path('creditodebito/',creditodebito, name="creditodebito"),
+<<<<<<< HEAD
 >>>>>>> pedro
+=======
+    path('agregarprod/',agregar_prod, name="agregarprod"),
+>>>>>>> Luis
     ]
 
