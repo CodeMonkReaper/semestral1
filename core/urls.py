@@ -9,6 +9,6 @@ urlpatterns = [
     path('api/',api, name="api"),
     path('comprar/',comprar, name="comprar"),
     path('creditodebito/',creditodebito, name="creditodebito"),
-    path('agregar-prod/',agregar_prod, name="agregar_prod"),
+    path('agregarprod/',agregar_prod, name="agregarprod"),
     ]
 
