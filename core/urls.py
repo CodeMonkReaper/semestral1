@@ -10,4 +10,5 @@ urlpatterns = [
     path('comprar/',comprar, name="comprar"),
     path('creditodebito/',creditodebito, name="creditodebito"),
     path('agregarprod/',agregar_prod, name="agregarprod"),
+    
     ]

@@ -17,12 +17,13 @@ def register(request):
 def login(request):
     return render(request,'core/login.html')
 
-def productos(request):
-    #return render(request,'core/productos.html') 
-    return HttpResponse ("Hola Pythonizando")
-
 def comprar(request):
     return render(request,'core/comprar.html')
 
 def creditodebito(request):
     return render(request,'core/creditodebito.html')
+
+
+
+
+
