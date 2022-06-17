@@ -27,3 +27,9 @@ def creditodebito(request):
 
 def agregar_prod(request):
     return render(request,'core/agregarprod.html')
+
+def categoria(request):
+    return render(request,'core/categoria.html')
+
+def producto(request):
+    return render(request,'core/producto.html')
