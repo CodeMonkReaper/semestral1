@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from distutils.command.upload import upload
 from email.mime import image
 from django.db import models
@@ -17,3 +18,8 @@ class producto(models.Model):
     imagen= models.ImageField(upload_to="productos", null=True)
     def __str__(self):
         return self.nombre
+=======
+from django.db import models
+
+# Create your models here.
+>>>>>>> luis-reescrito

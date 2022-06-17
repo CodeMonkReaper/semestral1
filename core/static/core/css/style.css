@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 
 body {
     background-image: url('../css/img/sun-pattern.jpg');
+=======
+body {
+
+    background-image: url("img/sun-pattern.jpg");
+>>>>>>> luis-reescrito
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -12,7 +18,10 @@ body {
 
     background-color: #CA6510;
     padding: 25px;
+<<<<<<< HEAD
     margin-top: auto;
+=======
+>>>>>>> luis-reescrito
 
     }
 
@@ -45,4 +54,7 @@ body {
         margin-top: auto;
 
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> luis-reescrito

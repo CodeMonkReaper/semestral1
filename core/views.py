@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+<<<<<<< HEAD
 from core.models import producto
 
 # Create your views here.
@@ -36,3 +37,8 @@ def agregarprod(request):
 
 
 
+=======
+# Create your views here.
+def home(request):
+    return render(request, 'core/home.html')
+>>>>>>> luis-reescrito

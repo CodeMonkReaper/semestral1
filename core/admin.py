@@ -1,4 +1,5 @@
 from django.contrib import admin
+<<<<<<< HEAD
 from core.models import categoria, producto
 # Register your models here.
 class productoAdmin(admin.ModelAdmin):
@@ -11,3 +12,7 @@ admin.site.register(categoria)
 admin.site.register(producto,productoAdmin)
 
 
+=======
+
+# Register your models here.
+>>>>>>> luis-reescrito
