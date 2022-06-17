@@ -1,25 +1,29 @@
-from email.mime import image
-from django.db import models
+from django.shortcuts import render
 
-# Create your models here.
-class categoria(models.Model):
-    tipo= models.CharField(max_length=50)
-    def __str__(self):
-        return self.tipo
+# Create your views here.
+def home(request):
+    return render(request, 'core/home.html')
 
-class producto(models.Model):
-    nombre= models.CharField(max_length=50)
-    precio= models.IntegerField()
-    descripcion= models.TextField()
-    imagen = models.ImageField(upload_to='core/static/img/productos')
-    categoria= models.ForeignKey(categoria, on_delete=models.CASCADE)
-    nombrec = models.models.CharField(max_length=64)
-    categoriac = models.models.CharField(max_length=32)
-    precioc = models.IntegerField()
-    def __str__(self):
-<<<<<<< Updated upstream
-        return f'{self.nombrec} -> {self.precioc}'      
-=======
-        return f'{self.nombrec} -> {self.precioc}'      
+def quienes_somos(request):
+    return render(request, 'core/quienes_somos.html')
 
->>>>>>> Stashed changes
+def api(request):
+    return render(request,'core/api.html')
+
+def register(request):
+    return render(request,'core/register.html')
+
+def login(request):
+    return render(request,'core/login.html')
+
+def productos(request):
+    return render(request,'core/productos.html')
+
+def comprar(request):
+    return render(request,'core/comprar.html')
+
+def creditodebito(request):
+    return render(request,'core/creditodebito.html')
+
+def agregar_prod(request):
+    return render(request,'core/agregarprod.html')
