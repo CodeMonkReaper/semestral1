@@ -13,8 +13,13 @@ class producto(models.Model):
     descripcion= models.TextField()
     imagen = models.ImageField(upload_to='core/static/img/productos')
     categoria= models.ForeignKey(categoria, on_delete=models.CASCADE)
+<<<<<<< HEAD
     nombrec = models.models.CharField(max_length=64)
     categoriac = models.models.CharField(max_length=32)
     precioc = models.IntegerField()
     def __str__(self):
         return f'{self.nombrec} -> {self.precioc}'      
+=======
+    def __str__(self):
+        return self.nombre
+>>>>>>> pedro
