@@ -1,5 +1,4 @@
-from core.models import agregar_prod
-from .views import home, quienes_somos, api, register, login, productos, comprar, creditodebito
+from .views import home, quienes_somos, api, register, login, productos, comprar, creditodebito, agregar_prod
 from django.urls import path
 urlpatterns = [
     path('', home, name="home"),
@@ -10,5 +9,6 @@ urlpatterns = [
     path('api/',api, name="api"),
     path('comprar/',comprar, name="comprar"),
     path('creditodebito/',creditodebito, name="creditodebito"),
-    path('agregarprod/', agregar_prod, name="agregarprod"),
+    path('agregarprod/',agregar_prod, name="agregarprod"),
     ]
+

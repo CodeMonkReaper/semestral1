@@ -1,35 +1,16 @@
-from django.shortcuts import render
+from email.mime import image
+from django.db import models
 
-# Create your views here.
-def home(request):
-    return render(request, 'core/home.html')
+# Create your models here.
+class categoria(models.Model):
+    tipo= models.CharField(max_length=50)
+    def __str__(self):
+        return self.tipo
 
-def quienes_somos(request):
-    return render(request, 'core/quienes_somos.html')
-
-def api(request):
-    return render(request,'core/api.html')
-
-def register(request):
-    return render(request,'core/register.html')
-
-def login(request):
-    return render(request,'core/login.html')
-
-def productos(request):
-    return render(request,'core/productos.html')
-
-def comprar(request):
-    return render(request,'core/comprar.html')
-
-def creditodebito(request):
-    return render(request,'core/creditodebito.html')
-
-def agregar_prod(request):
-    return render(request,'core/agregarprod.html')
-
-def categoria(request):
-    return render(request,'core/categoria.html')
-
-def producto(request):
-    return render(request,'core/producto.html')
+class producto(models.Model):
+    nombre= models.CharField(max_length=50)
+    precio= models.IntegerField()
+    descripcion= models.TextField()
+    categoria= models.ForeignKey(categoria, on_delete=models.CASCADE)
+    def __str__(self):
+        return self.nombre
