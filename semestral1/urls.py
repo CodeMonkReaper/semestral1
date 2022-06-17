@@ -15,12 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-<<<<<<< HEAD
-
-=======
 from django.conf import settings
 from django.conf.urls.static import static
->>>>>>> Luis
 admin.site.site_header = 'Administracion de maceteao'
 urlpatterns = [
     path('admin/', admin.site.urls),
