@@ -17,4 +17,9 @@ class producto(models.Model):
     categoriac = models.models.CharField(max_length=32)
     precioc = models.IntegerField()
     def __str__(self):
+<<<<<<< Updated upstream
         return f'{self.nombrec} -> {self.precioc}'      
+=======
+        return f'{self.nombrec} -> {self.precioc}'      
+
+>>>>>>> Stashed changes
