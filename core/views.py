@@ -3,13 +3,7 @@ from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 def home(request):
-    queryset = request.GET.get("buscar")
-    posts = Post.objects.filter(estado = True) 
-    if queryset:
-        posts = Post.objects.filter(
-
-        )
-    return render(request, 'core/home.html', {'posts':posts})
+    return render(request, 'core/home.html')
 
 def quienes_somos(request):
     return render(request, 'core/quienes_somos.html')
