@@ -23,7 +23,12 @@ def comprar(request):
 def creditodebito(request):
     return render(request,'core/creditodebito.html')
 
+<<<<<<< HEAD
 
+=======
+def agregarprod(request):
+    return render(request,'core/agregarprod.html')
+>>>>>>> Luis
 
 
 

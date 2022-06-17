@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 from .views import home, quienes_somos, api, register, login, comprar, creditodebito
+=======
+from .views import home,  quienes_somos, api, register, login, productos, comprar, creditodebito, agregarprod
+>>>>>>> Luis
 from django.urls import path
 urlpatterns = [
     path('', home, name="home"),
@@ -8,5 +12,11 @@ urlpatterns = [
     path('api/',api, name="api"),
     path('comprar/',comprar, name="comprar"),
     path('creditodebito/',creditodebito, name="creditodebito"),
+<<<<<<< HEAD
     
     ]
+=======
+    path('agregarprod/',agregarprod, name="agregarprod"),
+    ]
+
+>>>>>>> Luis
