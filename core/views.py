@@ -17,14 +17,11 @@ def register(request):
 def login(request):
     return render(request,'core/login.html')
 
-<<<<<<< HEAD
 def productos(request):
     productos= producto.objects.all()
     data={'productos':productos}
     return render(request,'core/productos.html',data)
 
-=======
->>>>>>> camilo
 def comprar(request):
     return render(request,'core/comprar.html')
 
