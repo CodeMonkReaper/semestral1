@@ -12,9 +12,12 @@ urlpatterns = [
     path('api/',api, name="api"),
     path('comprar/',comprar, name="comprar"),
     path('creditodebito/',creditodebito, name="creditodebito"),
+<<<<<<< HEAD
     path('agregarprod/',agregarprod, name="agregarprod"),
     path('accounts/', include('django.contrib.auth.urls')), 
-    
+    ]
 
+=======
     path('productos/',productos, name="productos"),
 ]
+>>>>>>> camilo
