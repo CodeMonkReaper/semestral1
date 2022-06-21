@@ -1,6 +1,6 @@
+<!DOCTYPE html>
 {% extends 'core/base.html' %}
 {% load static %}
-
 {% block css %}
 <link rel="stylesheet" href="{% static 'core/css/style.css'%}">
 <link rel="stylesheet" href="{% static 'core/bootstrap/css/bootstrap.min.css'%}"
@@ -8,6 +8,39 @@
 
 {% block js %}
 {% endblock  %}
+
+{%block carrito%}
+      <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 align-self-center"><h1 class="display-1">Carrito de compras</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="row" style="padding: 10px 0;">
+                        <div class="col-12">
+                            <div class="row">
+                                {% for producto in productos %}
+                                <div class="col-6">
+                                    <div class="card" style="height: 10rem; width: 23rem; margin: 5px 0px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{producto.nombre}}</h5>
+                                            <p class="card-text">{{producto.categoria}}</p>
+                                            <p class="card-text">{{producto.precio}}</p>
+                                            <a href="{% url 'Add' producto.id %}" class="btn btn-primary">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    {% include "carrito.html" %}
+                </div>
+            </div>
+        </div>
 
 <div class="alert alert-primary" role="alert">
     <table class="table table-bordered">
@@ -52,3 +85,9 @@
         <div class="col-6"><a href="{% url 'CLS' %}" class="btn btn-danger">Limpiar</a></div>
         <div class="col-6"><a href="#" class="btn btn-success">Guardar</a></div>
     </div>
+    {%endblock carrito%}
+<!-- Aquí puedes escribir tu comentario --> 
+<!-- Aquí puedes escribir tu comentario --> 
+{% comment %} sssssssassasasasassa {% endcomment %}
+
+
