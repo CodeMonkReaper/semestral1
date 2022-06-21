@@ -1,5 +1,5 @@
 from django.contrib import admin
-from core.models import categoria, Producto
+from core.models import categoria, producto
 # Register your models here.
 class productoAdmin(admin.ModelAdmin):
     list_display = ['nombre', 'precio', 'descripcion', 'categoria']
@@ -8,4 +8,6 @@ class productoAdmin(admin.ModelAdmin):
     list_per_page: 10
 
 admin.site.register(categoria)
-admin.site.register(Producto,productoAdmin)
+admin.site.register(producto,productoAdmin)
+
+

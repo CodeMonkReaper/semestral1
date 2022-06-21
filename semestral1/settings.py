@@ -8,13 +8,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-r41prx)cn)$$^vztjoysj8ffbw8ed2nzgq+t512))nxt7b'
+SECRET_KEY = 'django-insecure-r41prx)cn)$$^vztjo*ysj_8ffbw8ed2nzgq+t512))nxt7b_*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
 
 ALLOWED_HOSTS = []
 
@@ -31,7 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core.apps.CoreConfig',
     'colorfield',
-    'CarritoApp',
+    'django.contrib.humanize',
 ]
 # only if django version >= 3.0
 X_FRAME_OPTIONS = 'SAMEORIGIN'
@@ -60,7 +57,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'CarritoApp.context_processor.total_carrito',
             ],
         },
     },
@@ -115,12 +111,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIR = [
-    BASE_DIR /"/CarritoApp/static/"
-    ]
 import os
 MEDIAA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media',"media")
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

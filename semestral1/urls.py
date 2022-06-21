@@ -1,6 +1,6 @@
 """semestral1 URL Configuration
 
-The urlpatterns list routes URLs to views. For more information please see:
+The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
 Examples:
 Function views
@@ -17,17 +17,10 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from CarritoApp.views import carrito, agregar_producto, eliminar_producto, restar_producto, limpiar_carrito
 admin.site.site_header = 'Administracion de maceteao'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('core.urls')),
-    path('accounts/', include('django.contrib.auth.urls')),
-    path('', carrito, name="Tienda"),
-    path('agregar/<int:producto_id>/', agregar_producto, name="Add"),
-    path('eliminar/<int:producto_id>/', eliminar_producto, name="Del"),
-    path('restar/<int:producto_id>/', restar_producto, name="Sub"),
-    path('limpiar/', limpiar_carrito, name="CLS"),
 ]
 
 if settings.DEBUG:

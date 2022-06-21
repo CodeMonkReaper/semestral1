@@ -41,23 +41,16 @@
               <li class="nav-item">
             </li>
             </ul>
-              <form class="d-flex">
+            <form class="d-flex">
               <a href="{%url 'login'%}">
               <button type="button" class="btn btn-success">Login</button>
               </a>
-              
-              {% if user.is_authenticated %}
-              <li>
-                <a href="#">Usuario: {{user.username}}</a>
-              </li>
-                  {% endif %}
-              
               <form class="d-flex">
-
+                
                 <a href="{%url 'register'%}">
                   <button type="button" class="btn btn-danger">Registrar</button>
                 </a>
-              <a href="{%url 'carrito'%}" class="nav-link">
+              <a href="comprar.html" class="nav-link">
                 <img src="{% static 'core/img/carrito.png' %}" alt="carrito">
               </a>
               <input class="form-control me-3" type="search" placeholder="Encuentra tu producto" aria-label="Search">
@@ -78,8 +71,8 @@
       {%block productos%}
       {%endblock productos%}
       
-      {% block carrito %}
-      {% endblock carrito  %}
+      {% block comprar %}
+      {% endblock comprar  %}
 
       {% block creditodebito %}
       {% endblock creditodebito  %}
