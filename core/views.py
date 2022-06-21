@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from .models import producto
+from django.contrib.auth.decorators import login_required
+
+
 
 # Create your views here.
 def home(request):
@@ -17,25 +19,19 @@ def register(request):
 def login(request):
     return render(request,'core/login.html')
 
-<<<<<<< HEAD
 def productos(request):
-    productos= producto.objects.all()
-    data={'productos':productos}
-    return render(request,'core/productos.html',data)
+    return render(request,'core/productos.html')
 
-=======
->>>>>>> camilo
 def comprar(request):
     return render(request,'core/comprar.html')
 
 def creditodebito(request):
     return render(request,'core/creditodebito.html')
 
+@login_required
+
 def agregarprod(request):
     return render(request,'core/agregarprod.html')
-
-def productos(request):
-    return render(request,'core/productos.html')
 
 
 
