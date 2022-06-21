@@ -91,16 +91,27 @@
               <li class="nav-item">
             </li>
             </ul>
+<<<<<<< HEAD
             <form class="d-flex">
 <<<<<<< HEAD
               <a href="{%url 'login'%}">
 =======
 <<<<<<< HEAD
+=======
+(            <form class="d-flex">
+>>>>>>> pedro
               <a href="{%url 'login'%}">
               <button type="button" class="btn btn-success">Login</button>
               </a>
+              
+              {% if user.is_authenticated %}
+              <li>
+                <a href="#">Usuario: {{user.username}}</a>
+              </li>
+                  {% endif %}
+              
               <form class="d-flex">
-                
+
                 <a href="{%url 'register'%}">
                   <button type="button" class="btn btn-danger">Registrar</button>
                 </a>
@@ -152,11 +163,14 @@
       {% block creditodebito %}
       {% endblock creditodebito  %}
 <<<<<<< HEAD
+<<<<<<< HEAD
       
 =======
 =======
 >>>>>>> luis-reescrito
 >>>>>>> nuevabranch
+=======
+>>>>>>> pedro
     <footer class="footer">
       <div class="row justify-content-around text-light">
         <div class="col-md-4 my-auto">

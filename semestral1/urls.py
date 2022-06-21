@@ -31,6 +31,7 @@ admin.site.site_header = 'Administracion de maceteao'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('core.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
 <<<<<<< HEAD
 

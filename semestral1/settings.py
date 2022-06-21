@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -16,6 +17,9 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 >>>>>>> luis-reescrito
 >>>>>>> nuevabranch
+=======
+
+>>>>>>> pedro
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -30,6 +34,9 @@ SECRET_KEY = 'django-insecure-r41prx)cn)$$^vztjo*ysj_8ffbw8ed2nzgq+t512))nxt7b_*
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 ALLOWED_HOSTS = []
 
