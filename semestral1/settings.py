@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core.apps.CoreConfig',
     'colorfield',
+    'CarritoApp',
 ]
 # only if django version >= 3.0
 X_FRAME_OPTIONS = 'SAMEORIGIN'
@@ -59,6 +60,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'CarritoApp.context_processor.total_carrito',
             ],
         },
     },
