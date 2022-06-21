@@ -1,6 +1,6 @@
 """semestral1 URL Configuration
 
-The `urlpatterns` list routes URLs to views. For more information please see:
+The urlpatterns list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
 Examples:
 Function views
@@ -15,33 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-<<<<<<< HEAD
 from django.conf import settings
 from django.conf.urls.static import static
 admin.site.site_header = 'Administracion de maceteao'
-=======
-<<<<<<< HEAD
-from django.conf import settings
-from django.conf.urls.static import static
-admin.site.site_header = 'Administracion de maceteao'
-=======
-
->>>>>>> luis-reescrito
->>>>>>> nuevabranch
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('core.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
 ]
-<<<<<<< HEAD
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-=======
-<<<<<<< HEAD
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-=======
->>>>>>> luis-reescrito
->>>>>>> nuevabranch
