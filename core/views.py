@@ -1,11 +1,6 @@
 from django.shortcuts import render
-<<<<<<< HEAD
 from django.contrib.auth.decorators import login_required
-
-
-=======
 from .models import producto
->>>>>>> Luis
 
 # Create your views here.
 def home(request):
