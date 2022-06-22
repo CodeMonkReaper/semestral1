@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
+
+
 
 # Create your views here.
 def home(request):
@@ -24,6 +27,8 @@ def comprar(request):
 
 def creditodebito(request):
     return render(request,'core/creditodebito.html')
+
+@login_required
 
 def agregarprod(request):
     return render(request,'core/agregarprod.html')

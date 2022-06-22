@@ -41,12 +41,19 @@
               <li class="nav-item">
             </li>
             </ul>
-            <form class="d-flex">
+(            <form class="d-flex">
               <a href="{%url 'login'%}">
               <button type="button" class="btn btn-success">Login</button>
               </a>
+              
+              {% if user.is_authenticated %}
+              <li>
+                <a href="#">Usuario: {{user.username}}</a>
+              </li>
+                  {% endif %}
+              
               <form class="d-flex">
-                
+
                 <a href="{%url 'register'%}">
                   <button type="button" class="btn btn-danger">Registrar</button>
                 </a>
